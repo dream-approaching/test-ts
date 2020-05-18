@@ -1,10 +1,24 @@
 module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+  },
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/eslint-recommended'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 11,
+    sourceType: 'module',
+  },
+  plugins: ['react', '@typescript-eslint'],
   rules: {
-    // 禁止使用 var
-    'no-var': 'error',
-    // 优先使用 interface 而不是 type
-    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+    'no-unused-vars': [2],
+    'no-console': [2],
   },
 };

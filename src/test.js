@@ -4,7 +4,7 @@ import './App.css';
 
 function App({ message }) {
   console.log('message', message);
-  const a = '123';
+  var a = '123';
 
   return (
     <div className="App">
