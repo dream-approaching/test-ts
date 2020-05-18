@@ -2,11 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-type AppProps = {
-  message?: string;
-};
-
-function App({ message }: AppProps) {
+function App({ message }) {
   console.log('message', message);
   const a = '123';
 
