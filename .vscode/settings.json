@@ -2,6 +2,6 @@
   "editor.formatOnSave": true,
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
-  "eslint.validate": ["javascript", "javascriptreact", "typescript"],
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescript", "typescriptreact"],
   "typescript.tsdk": "node_modules/typescript/lib"
 }

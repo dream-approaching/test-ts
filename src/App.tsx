@@ -8,8 +8,6 @@ type AppProps = {
 
 function App({ message }: AppProps) {
   console.log('message', message);
-  var a = '123';
-
   return (
     <div className="App">
       <header className="App-header">

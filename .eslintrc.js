@@ -2,6 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    amd: true,
+    node: true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/eslint-recommended'],
   globals: {
@@ -19,6 +21,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'no-unused-vars': [2],
-    'no-console': [2],
+    'no-var': [2],
+    'no-extra-semi': [2],
   },
 };
