@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type AppProps = {
   message: string;
 };
 
-function Page1({ message }: AppProps) {
-  return <div className="App">{message}</div>;
-}
+const Page1 = ({ message }: AppProps) => {
+  useEffect(() => {
+    setTimeout(() => {
+      /* do stuff */
+    }, 100);
+  });
+  return <div>{message}</div>;
+};
 
 export default Page1;
